@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Задание #1</title>
+</head>
+
+<body>
+  <h1>Cписок гиперссылок</h1>
+  <ul>
+    <li><a href="http://kubsu.ru">абсолютную гиперссылку на главную страницу сайта kubsu.ru</a></li>
+    <li><a href="https://kubsu.ru">абсолютную на главную сайта kubsu.ru в протоколе https</a></li>
+    <li><a href="https://kubsu.ru"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/960px-FullMoon2010.jpg" alt="картинка луны" width="400"></a></li>
+    <li><a href="/about">сокращенную ссылку на внутреннюю страницу</a></li>
+    <li><a href="/">сокращённая ссылка на главную страницу</a></li>
+    <li><a href="#form">ссылку на фрагмент текущей страницы</a></li>
+    <li><a href="/search?cat=programming&type=free&sort=desc">Ссылка с тремя параметрами в URL</a></li>
+    <li><a href="/item?id=42">ссылку с параметром id в URL</a></li>
+    <li><a href="index.html">относительную на страницу в текущем каталоге</a></li>
+    <li><a href="about/team.html">относительную на страницу в каталоге about</a></li>
+    <li><a href="../page.html">относительную на страницу в каталоге уровнем выше текущего</a></li>
+    <li><a href="../../page.html">относительную на страницу в каталоге двумя уровнями выше</a></li>
+    <li>контекстную ссылку <a href="context.html">в тексте</a> абзаца</li>
+    <li><a href="https://example.com/page#part2">ссылку на фрагмент страницы стороннего сайта</a></li>
+    <li>
+      <p>ссылки из прямоугольных и круглых областей картинки (HTML-тег map)</p>
+      <map name="imgmap">
+        <area shape="rect" coords="0,0,100,100" href="rect.html" alt="прямоугольник">
+        <area shape="circle" coords="150,75,50" href="circle.html" alt="круг">
+      </map>
+      <img src="rect_and_circle.jpg" usemap="#imgmap" alt="Image Map" width="400">
+    </li>
+    <li><a href="">ссылку с пустым href</a></li>
+    <li><a>ссылку без href</a></li>
+    <li><a href="index.html" rel="nofollow">ссылку, по которой запрещен переход поисковикам</a></li>
+    <li><a href="noindex2.html" rel="noindex">запрещенную для индексации поисковиками</a></li>
+    <li>
+      <ol>
+        <li><a href="https://max.ru/" title="max">Отечественный мессенджер MAX</a></li>
+        <li><a href="https://www.google.com" title="google">хухл</a></li>
+        <li><a href="https://yandex.com" title="yandex">ЯНДЕКС</a></li>
+      </ol>
+    </li>
+    <li><a href="ftp://username:password@ftp.example.com/filename.txt">ссылку на файл на сервере FTP с авторизацией</a></li>
+  </ul>
+
+  <hr>
+
+  <h1 id="form">Форма</h1>
+  <form action="/submit" method="post">
+    <label>ФИО: <input type="text" name="fullname" required></label>
+    <br><br>
+    <label>Телефон: <input type="tel" name="phone"></label>
+    <br><br>
+    <label>Email: <input type="email" name="email" required></label>
+    <br><br>
+    <label>Дата рождения: <input type="date" name="birthdate"></label>
+    <br><br>
+
+    <label>Пол:</label>
+    <br>
+    <label><input type="radio" name="gender" value="male"> Мужской</label>
+    <br>
+    <label><input type="radio" name="gender" value="female"> Женский</label>
+    <br><br>
+
+    <label>Любимый язык программирования:</label>
+    <br>
+    <select name="languages[]" multiple size="6">
+      <option value="Pascal">Pascal</option>
+      <option value="C">C</option>
+      <option value="C++">C++</option>
+      <option value="JavaScript">JavaScript</option>
+      <option value="PHP">PHP</option>
+      <option value="Python">Python</option>
+      <option value="Java">Java</option>
+      <option value="Haskel">Haskel</option>
+      <option value="Clojure">Clojure</option>
+      <option value="Prolog">Prolog</option>
+      <option value="Scala">Scala</option>
+    </select>
+    <br><br>
+
+    <label>Биография:<br>
+      <textarea name="bio" rows="5" cols="40"></textarea>
+    </label>
+    <br><br>
+
+    <label><input type="checkbox" name="contract" required> С контрактом ознакомлен(а)</label>
+    <br><br>
+
+    <button type="submit">Сохранить</button>
+  </form>
+
+  <hr>
+</body>
+</html>

@@ -78,11 +78,11 @@ th, td {
     background-color: #F4CEF3;
 }
 
-.one {
+.table-line-one {
     background-color: #FCF3FC;
 }
 
-.two {
+.table-line-two {
     background-color: #EDACEA;
 }
 
@@ -108,7 +108,7 @@ footer {
     display: none;
 }
 
-.item2{
+.schedule{
     order: -1;
 }
 .item1{
@@ -116,7 +116,7 @@ footer {
 }
 
 @media (width >= 1024px){
-    .item2{
+    .schedule{
         order: 0;
     }
     .item1{

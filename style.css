@@ -148,12 +148,14 @@ footer {
         text-decoration: none;
     }
     .menu-main{
+        left:80%;
         display: flex;
         background-color: #FCF3FC;
         padding: 10px;
         height: 50px;
-        width: 1000px;
+        width: 300px;
         margin: 0 auto;
         border-radius: 10px;
+        position: absolute;
     }
 }

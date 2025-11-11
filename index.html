@@ -1,212 +1,198 @@
 <!DOCTYPE html>
+
 <html lang="ru">
 
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>Задание #3</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Задание #3</title>
+    </head>
 
-<body>
+    <body>
 
-<header class="header">
-    <div class="highlighted">
-
-        <div class="container">
-            <div class="header-row">
-
-                <div class="logo">
-                    <a class="photo" href="/">
-                        <img class="transparent" src="logo.png" alt="logo" width="100">
-                    </a>
-                </div>
+        <header class="header">
+            <div class="logo">
+                <a class="logotip" href="/">
+                    <img class="transparent" src="logo.png" alt="logo">
+                </a>
 
                 <div class="name">
                     <h3>o-svaaa</h3>
                 </div>
-
-                <div class="menu-main">
-                    <nav>
-                        <ul>
-                            <li><a href="https://o-svaaa.github.io/s0196074.github.io/">Главная</a></li>
-                            <li><a href="/index.html">Информация</a></li>
-                            <li><a href="https://t.me/o_svaa">Мои контакты</a></li>
-                        </ul>
-                    </nav>
-                </div>
             </div>
+
+            <nav class="navigation">
+                <ul>
+                    <li><a href="https://o-svaaa.github.io/s0196074.github.io/">Главная</a></li>
+                    <li><a href="/index.html">Информация</a></li>
+                    <li><a href="https://t.me/o_svaa">Мои контакты</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="main-wrapper">
+            <div class="schedule content">
+                <table>
+                    <caption class="highlighted">Расписание недели ученика 6 класса</caption>
+                    <thead>
+                    <tr class="table-line-one">
+                        <th> Время</th>
+                        <th> Понедельник</th>
+                        <th> Вторник</th>
+                        <th> Среда</th>
+                        <th> Четверг</th>
+                        <th> Пятница</th>
+                        <th> Суббота</th>
+                        <th> Воскресенье</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="table-line-two">
+                        <td> 00:00 - 08:00</td>
+                        <td colspan="7"> Сон</td>
+                    </tr>
+                    <tr class="table-line-one">
+                        <td> 08:00 - 09:00</td>
+                        <td colspan="5"> Завтрак</td>
+                        <td rowspan="3" colspan="2"> Сон</td>
+                    </tr>
+                    <tr class="table-line-two">
+                        <td> 09:00 - 11:00</td>
+                        <td colspan="5"> Кружок по танцам</td>
+                    </tr>
+                    <tr class="table-line-one">
+                        <td> 11:00 - 12:00</td>
+                        <td colspan="5"> Перекус и дорога в школу</td>
+                    </tr>
+                    <tr class="table-line-two">
+                        <td> 12:00 - 16:00</td>
+                        <td colspan="5"> Школа</td>
+                        <td rowspan="1"> Поход к бабушке</td>
+                        <td rowspan="1"> Прогулка с друзьями</td>
+                    </tr>
+                    <tr class="table-line-one">
+                        <td> 16:00 - 17:00</td>
+                        <td colspan="7"> Ужин</td>
+                    </tr>
+                    <tr class="table-line-two">
+                        <td> 17:00 - 19:00</td>
+                        <td colspan="2"> Играет в компьютерные игры</td>
+                        <td colspan="2"> Играет с братом</td>
+                        <td colspan="1"> Помогает папе</td>
+                        <td colspan="2"> Время с семьей</td>
+                    </tr>
+                    <tr class="table-line-one">
+                        <td> 19:00 - 21:00</td>
+                        <td rowspan="2" colspan="5"> Подготовка ко сну</td>
+                        <td rowspan="1">Смотрит фильм</td>
+                        <td rowspan="2"> Просмотр мультиков</td>
+                    </tr>
+                    <tr class="table-line-two">
+                        <td> 21:00 - 22:00</td>
+                        <td colspan="1"> Чтение книг</td>
+                    </tr>
+                    <tr class="table-line-one">
+                        <td> 22:00 - 00:00</td>
+                        <td colspan="7"> Сон</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="hyperlinks highlighted content">
+                <h1>Cписок гиперссылок</h1>
+                <ul>
+                    <li><a href="http://kubsu.ru">абсолютную гиперссылку на главную страницу сайта kubsu.ru</a></li>
+                    <li><a href="https://kubsu.ru">абсолютную на главную сайта kubsu.ru в протоколе https</a></li>
+                    <li><a href="https://kubsu.ru"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/960px-FullMoon2010.jpg"
+                            alt="картинка луны" width="400"></a></li>
+                    <li><a href="/about">сокращенную ссылку на внутреннюю страницу</a></li>
+                    <li><a href="/">сокращённая ссылка на главную страницу</a></li>
+                    <li><a href="#form">ссылку на фрагмент текущей страницы</a></li>
+                    <li><a href="/search?cat=programming&type=free&sort=desc">Ссылка с тремя параметрами в URL</a></li>
+                    <li><a href="/item?id=42">ссылку с параметром id в URL</a></li>
+                    <li><a href="index.html">относительную на страницу в текущем каталоге</a></li>
+                    <li><a href="about/team.html">относительную на страницу в каталоге about</a></li>
+                    <li><a href="../page.html">относительную на страницу в каталоге уровнем выше текущего</a></li>
+                    <li><a href="../../page.html">относительную на страницу в каталоге двумя уровнями выше</a></li>
+                    <li>контекстную ссылку <a href="context.html">в тексте</a> абзаца</li>
+                    <li><a href="https://example.com/page#part2">ссылку на фрагмент страницы стороннего сайта</a></li>
+                    <li>
+                        <p>ссылки из прямоугольных и круглых областей картинки (HTML-тег map)</p>
+                        <map name="imgmap">
+                            <area shape="rect" coords="0,0,100,100" href="rect.html" alt="прямоугольник">
+                            <area shape="circle" coords="150,75,50" href="circle.html" alt="круг">
+                        </map>
+                        <img src="rect_and_circle.jpg" usemap="#imgmap" alt="Image Map" width="400">
+                    </li>
+                    <li><a href="">ссылку с пустым href</a></li>
+                    <li><a>ссылку без href</a></li>
+                    <li><a href="index.html" rel="nofollow">ссылку, по которой запрещен переход поисковикам</a></li>
+                    <li><a href="noindex2.html" rel="noindex">запрещенную для индексации поисковиками</a></li>
+                    <li>
+                        <ol>
+                            <li><a href="https://www.google.com" title="google">поисковая системаГугл</a></li>
+                            <li><a href="https://yandex.com" title="yandex"> поисковая система ЯНДЕКС</a></li>
+                            <li><a href="https://duckduckgo.com/" title="DuckDuckGO">поисковая система DuckDuckGo</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="ftp://username:password@ftp.example.com/filename.txt">ссылку на файл на сервере FTP с
+                        авторизацией</a></li>
+                </ul>
+            </div>
+
+
+            <div class="askform highlighted content">
+                <h1 id="form">Форма</h1>
+                <form action="/submit" method="post">
+                    <label>ФИО: <input type="text" name="fullname" required></label>
+                    <br><br>
+                    <label>Телефон: <input type="tel" name="phone"></label>
+                    <br><br>
+                    <label>Email: <input type="email" name="email" required></label>
+                    <br><br>
+                    <label>Дата рождения: <input type="date" name="birthdate"></label>
+                    <br><br>
+
+                    <label>Пол:</label>
+                    <br>
+                    <label><input type="radio" name="gender" value="male"> Мужской</label>
+                    <br>
+                    <label><input type="radio" name="gender" value="female"> Женский</label>
+                    <br><br>
+
+                    <label>Любимый язык программирования:</label>
+                    <br>
+                    <select name="languages[]" multiple size="6">
+                        <option value="Pascal">Pascal</option>
+                        <option value="C">C</option>
+                        <option value="C++">C++</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="PHP">PHP</option>
+                        <option value="Python">Python</option>
+                        <option value="Java">Java</option>
+                        <option value="Haskel">Haskel</option>
+                        <option value="Clojure">Clojure</option>
+                        <option value="Prolog">Prolog</option>
+                        <option value="Scala">Scala</option>
+                    </select>
+                    <br><br>
+
+                    <label>Биография:<br>
+                        <textarea name="bio" rows="5" cols="40"></textarea>
+                    </label>
+                    <br><br>
+
+                    <label><input type="checkbox" name="contract" required> С контрактом ознакомлен(а)</label>
+                    <br><br>
+
+                    <button type="submit">Сохранить</button>
+                </form>
+            </div>
+
+
+            <footer class="footer highlighted"><p> (с) Сомова Олеся </p></footer>
         </div>
-    </div>
-     <nav class="menu">
-        <ul>
-            <li><a href="https://o-svaaa.github.io/s0196074.github.io/">Главная</a></li>
-            <li><a href="/index.html">Информация</a></li>
-            <li><a href="https://t.me/o_svaa">Мои контакты</a></li>
-        </ul>
-    </nav>
-</header>
-
-<div class="schedule">
-    <table>
-        <caption class="highlighted">Расписание недели ученика 6 класса</caption>
-        <thead>
-            <tr class="table-line-one">
-                <th> Время</th>
-                <th> Понедельник</th>
-                <th> Вторник</th>
-                <th> Среда</th>
-                <th> Четверг</th>
-                <th> Пятница</th>
-                <th> Суббота</th>
-                <th> Воскресенье</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="table-line-two">
-                <td> 00:00 - 08:00</td>
-                <td colspan="7"> Сон</td>
-            </tr>
-            <tr class="table-line-one">
-                <td> 08:00 - 09:00</td>
-                <td colspan="5"> Завтрак</td>
-                <td rowspan="3" colspan="2"> Сон</td>
-            </tr>
-            <tr class="table-line-two">
-                <td> 09:00 - 11:00</td>
-                <td colspan="5"> Кружок по танцам</td>
-            </tr>
-            <tr class="table-line-one">
-                <td> 11:00 - 12:00</td>
-                <td colspan="5"> Перекус и дорога в школу </td>
-            </tr>
-            <tr class="table-line-two">
-                <td> 12:00 - 16:00</td>
-                <td colspan="5"> Школа</td>
-                <td rowspan="1"> Поход к бабушке</td>
-                <td rowspan="1"> Прогулка с друзьями</td>
-            </tr>
-            <tr class="table-line-one">
-                <td> 16:00 - 17:00</td>
-                <td colspan="7"> Ужин</td>
-            </tr>
-            <tr class="table-line-two">
-                <td> 17:00 - 19:00</td>
-                <td colspan="2"> Играет в компьютерные игры</td>
-                <td colspan="2"> Играет с братом</td>
-                <td colspan="1"> Помогает папе</td>
-                <td colspan="2"> Время с семьей</td>
-            </tr>
-            <tr class="table-line-one">
-                <td> 19:00 - 21:00</td>
-                <td rowspan="2" colspan="5"> Подготовка ко сну</td>
-                <td rowspan="1">Смотрит фильм </td>
-                <td rowspan="2"> Просмотр мультиков</td>
-            </tr>
-            <tr class="table-line-two">
-                <td> 21:00 - 22:00</td>
-                <td colspan="1"> Чтение книг</td>
-            </tr>
-            <tr class="table-line-one">
-                <td> 22:00 - 00:00</td>
-                <td colspan="7"> Сон</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-
-<div class="container-main">
-    <div class="highlighted content item1">
-        <h1>Cписок гиперссылок</h1>
-        <ul>
-            <li><a href="http://kubsu.ru">абсолютную гиперссылку на главную страницу сайта kubsu.ru</a></li>
-            <li><a href="https://kubsu.ru">абсолютную на главную сайта kubsu.ru в протоколе https</a></li>
-            <li><a href="https://kubsu.ru"><img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/960px-FullMoon2010.jpg"
-                    alt="картинка луны" width="400"></a></li>
-            <li><a href="/about">сокращенную ссылку на внутреннюю страницу</a></li>
-            <li><a href="/">сокращённая ссылка на главную страницу</a></li>
-            <li><a href="#form">ссылку на фрагмент текущей страницы</a></li>
-            <li><a href="/search?cat=programming&type=free&sort=desc">Ссылка с тремя параметрами в URL</a></li>
-            <li><a href="/item?id=42">ссылку с параметром id в URL</a></li>
-            <li><a href="index.html">относительную на страницу в текущем каталоге</a></li>
-            <li><a href="about/team.html">относительную на страницу в каталоге about</a></li>
-            <li><a href="../page.html">относительную на страницу в каталоге уровнем выше текущего</a></li>
-            <li><a href="../../page.html">относительную на страницу в каталоге двумя уровнями выше</a></li>
-            <li>контекстную ссылку <a href="context.html">в тексте</a> абзаца</li>
-            <li><a href="https://example.com/page#part2">ссылку на фрагмент страницы стороннего сайта</a></li>
-            <li>
-                <p>ссылки из прямоугольных и круглых областей картинки (HTML-тег map)</p>
-                <map name="imgmap">
-                    <area shape="rect" coords="0,0,100,100" href="rect.html" alt="прямоугольник">
-                    <area shape="circle" coords="150,75,50" href="circle.html" alt="круг">
-                </map>
-                <img src="rect_and_circle.jpg" usemap="#imgmap" alt="Image Map" width="400">
-            </li>
-            <li><a href="">ссылку с пустым href</a></li>
-            <li><a>ссылку без href</a></li>
-            <li><a href="index.html" rel="nofollow">ссылку, по которой запрещен переход поисковикам</a></li>
-            <li><a href="noindex2.html" rel="noindex">запрещенную для индексации поисковиками</a></li>
-            <li>
-                <ol>
-                    <li><a href="https://www.google.com" title="google">поисковая системаГугл</a></li>
-                    <li><a href="https://yandex.com" title="yandex"> поисковая система ЯНДЕКС</a></li>
-                    <li><a href="https://duckduckgo.com/" title="DuckDuckGO">поисковая система DuckDuckGo</a></li>
-                </ol>
-            </li>
-            <li><a href="ftp://username:password@ftp.example.com/filename.txt">ссылку на файл на сервере FTP с
-                авторизацией</a></li>
-        </ul>
-    </div>
-</div>
-
-
-<div class="highlighted content">
-    <h1 id="form">Форма</h1>
-    <form action="/submit" method="post">
-        <label>ФИО: <input type="text" name="fullname" required></label>
-        <br><br>
-        <label>Телефон: <input type="tel" name="phone"></label>
-        <br><br>
-        <label>Email: <input type="email" name="email" required></label>
-        <br><br>
-        <label>Дата рождения: <input type="date" name="birthdate"></label>
-        <br><br>
-
-        <label>Пол:</label>
-        <br>
-        <label><input type="radio" name="gender" value="male"> Мужской</label>
-        <br>
-        <label><input type="radio" name="gender" value="female"> Женский</label>
-        <br><br>
-
-        <label>Любимый язык программирования:</label>
-        <br>
-          <select name="languages[]" multiple size="6">
-            <option value="Pascal">Pascal</option>
-            <option value="C">C</option>
-            <option value="C++">C++</option>
-            <option value="JavaScript">JavaScript</option>
-            <option value="PHP">PHP</option>
-            <option value="Python">Python</option>
-            <option value="Java">Java</option>
-            <option value="Haskel">Haskel</option>
-            <option value="Clojure">Clojure</option>
-            <option value="Prolog">Prolog</option>
-            <option value="Scala">Scala</option>
-        </select>
-        <br><br>
-
-        <label>Биография:<br>
-            <textarea name="bio" rows="5" cols="40"></textarea>
-        </label>
-        <br><br>
-
-        <label><input type="checkbox" name="contract" required> С контрактом ознакомлен(а)</label>
-        <br><br>
-
-        <button type="submit">Сохранить</button>
-    </form>
-</div>
-<footer class="highlighted"><p> (с) Сомова Олеся </p></footer>
-</body>
+    </body>
 </html>

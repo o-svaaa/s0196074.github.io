@@ -1,93 +1,13 @@
-.main-wrapper {
-    display: flex;
-    flex-direction: column;
-}
-
-.header {
-    display: flex;
-    order: 0;
-    flex-direction: column;
-    position: relative;
-    width: 100%;
-    justify-content: start;
-    background-color: #F4CEF3;
-    flex: 2;
-}
-
-.logo {
-    display: flex;
-    order: 1;
-    flex-direction: row;
-}
-
-.logotip {
-    order: 0;
-    object-fit: cover;
-    padding: 10px;
-    justify-content: center;
-    flex: 1;
-}
-
-.logotip img {
-    width: 70px;
-}
-
-.name {
-    order: 1;
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align: center;
-    align-items: center;
-    flex: 1;
-}
-
-.navigation {
-    display: flex;
-    order: 2;
-    justify-content: flex-start;
-    background-color: #FFFAD8;
-    /*width: 100%;*/
-
-}
-
-.navigation ul {
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-    flex-direction: column;
-    list-style-type: none;
-    text-decoration: none;
-    margin-right: 20px;
-
-}
-
-.navigation ul li a {
-    text-decoration: none;
-    color: black;
-}
-
-caption {
-    padding: 15px;
-    caption-side: top;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
+.table {
+    --bs-table-bg: transparent;
 }
 
 table {
-    width: 960px;
-    margin: 10px auto 0;
-    border-collapse: collapse;
-}
-
-th, td {
-    border: 1px solid #ccc;
-    padding: 15px;
-    text-align: center;
+    caption-side: top;
 }
 
 .highlighted {
-    background-color: #F4CEF3;
+    background-color: #F4CEF3 !important;
 }
 
 .table-line-one {
@@ -98,83 +18,37 @@ th, td {
     background-color: #EDACEA;
 }
 
-.content {
-    width: 960px;
-    margin: 10px auto 0;
-    padding: 10px;
+/* Дополнительные кастомные стили */
+.table-container table {
+    font-size: 0.9rem;
 }
 
-.hyperlinks {
-    display: flex;
-    order: 2;
-    flex-direction: column;
-    justify-content: center;
+.links ul li {
+    margin-bottom: 0.5rem;
 }
 
-.askform {
-    order: 3;
-    justify-content: center;
-    flex-direction: column;
+/* Адаптивность изображений */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
 }
 
-.schedule {
-    order: 1;
-    justify-content: center;
-    flex-direction: column;
-}
-
-footer {
-    width: 100%;
-    margin: 10px auto 0;
-    order: 4;
-    justify-content: center;
-}
-
-@media (min-width: 1024px) {
-    .main-wrapper {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
+/* Mobile First - дополнительные настройки для мобильных устройств */
+@media (max-width: 768px) {
+    .table-responsive {
+        font-size: 0.8rem;
     }
 
-    .header {
-        justify-content: start;
+    .form .btn {
         width: 100%;
-        flex-direction: row;
-        flex: 1;
     }
+}
 
-    .navigation {
-        justify-content: flex-end;
-        background-color: #cdbbd3;
-        border-radius: 7%;
-        margin-right: 20px;
-        margin-left: auto;
-        align-items: center;
+/* Улучшение внешнего вида для десктопов */
+@media (min-width: 992px) {
+    .table-container,
+    .links,
+    .form {
+        height: fit-content;
     }
-
-    .navigation ul {
-        flex-direction: row;
-    }
-
-    .hyperlinks {
-        order: 1;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .askform {
-        order: 2;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .schedule {
-        order: 3;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .footer {
-        order: 4;
-    }
-
-
 }

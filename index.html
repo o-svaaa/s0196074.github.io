@@ -1,198 +1,235 @@
 <!DOCTYPE html>
-
 <html lang="ru">
-
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
-        <title>Задание #3</title>
-    </head>
-
-    <body>
-
-        <header class="header">
-            <div class="logo">
-                <a class="logotip" href="/">
-                    <img class="transparent" src="logo.png" alt="logo">
-                </a>
-
-                <div class="name">
-                    <h3>o-svaaa</h3>
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание #4</title>
+    <!-- Подключение Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Header -->
+<header class="bg-primary text-black highlighted">
+    <div class="container">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center py-3">
+            <div class="d-flex align-items-center mb-3 mb-md-0">
+                <img src="logo.png" width="65" alt="Логотип" class="me-2">
+                <p class="h5 mb-0">o-svaaa</p>
             </div>
-
-            <nav class="navigation">
-                <ul>
-                    <li><a href="https://o-svaaa.github.io/s0196074.github.io/">Главная</a></li>
-                    <li><a href="/index.html">Информация</a></li>
-                    <li><a href="https://t.me/o_svaa">Мои контакты</a></li>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="https://o-svaaa.github.io/s0196074.github.io/" class="nav-link text-black fw-bold">главная</a></li>
+                    <li class="nav-item"><a href="/index.html" class="nav-link text-black fw-bold">информация</a></li>
+                    <li class="nav-item"><a href="https://t.me/o_svaa" class="nav-link text-black fw-bold">мои контакты</a></li>
                 </ul>
             </nav>
-        </header>
+        </div>
+    </div>
+</header>
 
-        <div class="main-wrapper">
-            <div class="schedule content">
-                <table>
-                    <caption class="highlighted">Расписание недели ученика 6 класса</caption>
-                    <thead>
-                    <tr class="table-line-one">
-                        <th> Время</th>
-                        <th> Понедельник</th>
-                        <th> Вторник</th>
-                        <th> Среда</th>
-                        <th> Четверг</th>
-                        <th> Пятница</th>
-                        <th> Суббота</th>
-                        <th> Воскресенье</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr class="table-line-two">
-                        <td> 00:00 - 08:00</td>
-                        <td colspan="7"> Сон</td>
-                    </tr>
-                    <tr class="table-line-one">
-                        <td> 08:00 - 09:00</td>
-                        <td colspan="5"> Завтрак</td>
-                        <td rowspan="3" colspan="2"> Сон</td>
-                    </tr>
-                    <tr class="table-line-two">
-                        <td> 09:00 - 11:00</td>
-                        <td colspan="5"> Кружок по танцам</td>
-                    </tr>
-                    <tr class="table-line-one">
-                        <td> 11:00 - 12:00</td>
-                        <td colspan="5"> Перекус и дорога в школу</td>
-                    </tr>
-                    <tr class="table-line-two">
-                        <td> 12:00 - 16:00</td>
-                        <td colspan="5"> Школа</td>
-                        <td rowspan="1"> Поход к бабушке</td>
-                        <td rowspan="1"> Прогулка с друзьями</td>
-                    </tr>
-                    <tr class="table-line-one">
-                        <td> 16:00 - 17:00</td>
-                        <td colspan="7"> Ужин</td>
-                    </tr>
-                    <tr class="table-line-two">
-                        <td> 17:00 - 19:00</td>
-                        <td colspan="2"> Играет в компьютерные игры</td>
-                        <td colspan="2"> Играет с братом</td>
-                        <td colspan="1"> Помогает папе</td>
-                        <td colspan="2"> Время с семьей</td>
-                    </tr>
-                    <tr class="table-line-one">
-                        <td> 19:00 - 21:00</td>
-                        <td rowspan="2" colspan="5"> Подготовка ко сну</td>
-                        <td rowspan="1">Смотрит фильм</td>
-                        <td rowspan="2"> Просмотр мультиков</td>
-                    </tr>
-                    <tr class="table-line-two">
-                        <td> 21:00 - 22:00</td>
-                        <td colspan="1"> Чтение книг</td>
-                    </tr>
-                    <tr class="table-line-one">
-                        <td> 22:00 - 00:00</td>
-                        <td colspan="7"> Сон</td>
-                    </tr>
-                    </tbody>
-                </table>
+<main class="container my-4">
+    <div class="row g-4">
+        <!-- Таблица -->
+        <div class="col-12 order-1 order-lg-1">
+            <div class="table-container">
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <caption class="h4 mb-3 table-line-one">Расписание недели ученика 6 класса</caption>
+                        <thead>
+                        <tr class="table-line-one">
+                            <th> Время</th>
+                            <th> Понедельник</th>
+                            <th> Вторник</th>
+                            <th> Среда</th>
+                            <th> Четверг</th>
+                            <th> Пятница</th>
+                            <th> Суббота</th>
+                            <th> Воскресенье</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="table-line-two">
+                            <td> 00:00 - 08:00</td>
+                            <td colspan="7"> Сон</td>
+                        </tr>
+                        <tr class="table-line-one">
+                            <td> 08:00 - 09:00</td>
+                            <td colspan="5"> Завтрак</td>
+                            <td rowspan="3" colspan="2"> Сон</td>
+                        </tr>
+                        <tr class="table-line-two">
+                            <td> 09:00 - 11:00</td>
+                            <td colspan="5"> Кружок по танцам</td>
+                        </tr>
+                        <tr class="table-line-one">
+                            <td> 11:00 - 12:00</td>
+                            <td colspan="5"> Перекус и дорога в школу</td>
+                        </tr>
+                        <tr class="table-line-two">
+                            <td> 12:00 - 16:00</td>
+                            <td colspan="5"> Школа</td>
+                            <td rowspan="1"> Поход к бабушке</td>
+                            <td rowspan="1"> Прогулка с друзьями</td>
+                        </tr>
+                        <tr class="table-line-one">
+                            <td> 16:00 - 17:00</td>
+                            <td colspan="7"> Ужин</td>
+                        </tr>
+                        <tr class="table-line-two">
+                            <td> 17:00 - 19:00</td>
+                            <td colspan="2"> Играет в компьютерные игры</td>
+                            <td colspan="2"> Играет с братом</td>
+                            <td colspan="1"> Помогает папе</td>
+                            <td colspan="2"> Время с семьей</td>
+                        </tr>
+                        <tr class="table-line-one">
+                            <td> 19:00 - 21:00</td>
+                            <td rowspan="2" colspan="5"> Подготовка ко сну</td>
+                            <td rowspan="1">Смотрит фильм</td>
+                            <td rowspan="2"> Просмотр мультиков</td>
+                        </tr>
+                        <tr class="table-line-two">
+                            <td> 21:00 - 22:00</td>
+                            <td colspan="1"> Чтение книг</td>
+                        </tr>
+                        <tr class="table-line-one">
+                            <td> 22:00 - 00:00</td>
+                            <td colspan="7"> Сон</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
+        </div>
 
-            <div class="hyperlinks highlighted content">
-                <h1>Cписок гиперссылок</h1>
-                <ul>
-                    <li><a href="http://kubsu.ru">абсолютную гиперссылку на главную страницу сайта kubsu.ru</a></li>
-                    <li><a href="https://kubsu.ru">абсолютную на главную сайта kubsu.ru в протоколе https</a></li>
-                    <li><a href="https://kubsu.ru"><img
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/960px-FullMoon2010.jpg"
-                            alt="картинка луны" width="400"></a></li>
-                    <li><a href="/about">сокращенную ссылку на внутреннюю страницу</a></li>
-                    <li><a href="/">сокращённая ссылка на главную страницу</a></li>
-                    <li><a href="#form">ссылку на фрагмент текущей страницы</a></li>
-                    <li><a href="/search?cat=programming&type=free&sort=desc">Ссылка с тремя параметрами в URL</a></li>
-                    <li><a href="/item?id=42">ссылку с параметром id в URL</a></li>
-                    <li><a href="index.html">относительную на страницу в текущем каталоге</a></li>
-                    <li><a href="about/team.html">относительную на страницу в каталоге about</a></li>
-                    <li><a href="../page.html">относительную на страницу в каталоге уровнем выше текущего</a></li>
-                    <li><a href="../../page.html">относительную на страницу в каталоге двумя уровнями выше</a></li>
-                    <li>контекстную ссылку <a href="context.html">в тексте</a> абзаца</li>
-                    <li><a href="https://example.com/page#part2">ссылку на фрагмент страницы стороннего сайта</a></li>
-                    <li>
+        <!-- Ссылки -->
+        <div class="col-12 order-3 order-lg-2 highlighted">
+            <div class="links">
+                <h2 class="h4 mb-3">Список гиперссылок</h2>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="http://kubsu.ru">абсолютную гиперссылку на главную страницу сайта kubsu.ru</a></li>
+                    <li class="mb-2"><a href="https://kubsu.ru">абсолютную на главную сайта kubsu.ru в протоколе https</a></li>
+
+                    <li class="mb-2">
+                        <a href="https://kubsu.ru">
+                            <img
+                                class="img-fluid"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/960px-FullMoon2010.jpg"
+                                alt="картинка луны" width="400"
+                            >
+                        </a>
+                    </li>
+
+                    <li class="mb-2"><a href="/about">сокращенную ссылку на внутреннюю страницу</a></li>
+                    <li class="mb-2"><a href="/">сокращённая ссылка на главную страницу</a></li>
+                    <li class="mb-2"><a href="#form">ссылку на фрагмент текущей страницы</a></li>
+                    <li class="mb-2"><a href="/search?cat=programming&type=free&sort=desc">Ссылка с тремя параметрами в URL</a></li>
+                    <li class="mb-2"><a href="/item?id=42">ссылку с параметром id в URL</a></li>
+                    <li class="mb-2"><a href="index.html">относительную на страницу в текущем каталоге</a></li>
+                    <li class="mb-2"><a href="about/team.html">относительную на страницу в каталоге about</a></li>
+                    <li class="mb-2"><a href="../page.html">относительную на страницу в каталоге уровнем выше текущего</a></li>
+                    <li class="mb-2"><a href="../../page.html">относительную на страницу в каталоге двумя уровнями выше</a></li>
+                    <li class="mb-2">контекстную ссылку <a href="context.html">в тексте</a> абзаца</li>
+                    <li class="mb-2"><a href="https://example.com/page#part2">ссылку на фрагмент страницы стороннего сайта</a></li>
+                    <li class="mb-2">
                         <p>ссылки из прямоугольных и круглых областей картинки (HTML-тег map)</p>
-                        <map name="imgmap">
+                        <map name="plant">
                             <area shape="rect" coords="0,0,100,100" href="rect.html" alt="прямоугольник">
                             <area shape="circle" coords="150,75,50" href="circle.html" alt="круг">
                         </map>
-                        <img src="rect_and_circle.jpg" usemap="#imgmap" alt="Image Map" width="400">
+                        <img class="img-fluid" src="rect_and_circle.jpg" usemap="#imgmap" alt="Image Map" width="400">
                     </li>
-                    <li><a href="">ссылку с пустым href</a></li>
-                    <li><a>ссылку без href</a></li>
-                    <li><a href="index.html" rel="nofollow">ссылку, по которой запрещен переход поисковикам</a></li>
-                    <li><a href="noindex2.html" rel="noindex">запрещенную для индексации поисковиками</a></li>
-                    <li>
+                    <li class="mb-2"><a href="">ссылку с пустым href</a></li>
+                    <li class="mb-2"><a>ссылку без href</a></li>
+                    <li class="mb-2"><a href="index.html" rel="nofollow">ссылку, по которой запрещен переход поисковикам</a></li>
+                    <li class="mb-2"><a href="noindex2.html" rel="noindex">запрещенную для индексации поисковиками</a></li>
+                    <li class="mb-2">
                         <ol>
-                            <li><a href="https://www.google.com" title="google">поисковая системаГугл</a></li>
-                            <li><a href="https://yandex.com" title="yandex"> поисковая система ЯНДЕКС</a></li>
-                            <li><a href="https://duckduckgo.com/" title="DuckDuckGO">поисковая система DuckDuckGo</a></li>
+                            <li class="mb-1"><a href="https://www.google.com" title="google">поисковая системаГугл</a></li>
+                            <li class="mb-1"><a href="https://yandex.com" title="yandex"> поисковая система ЯНДЕКС</a></li>
+                            <li class="mb-1"><a href="https://duckduckgo.com/" title="DuckDuckGO">поисковая система DuckDuckGo</a></li>
                         </ol>
                     </li>
-                    <li><a href="ftp://username:password@ftp.example.com/filename.txt">ссылку на файл на сервере FTP с
+                    <li class="mb-2"><a href="ftp://username:password@ftp.example.com/filename.txt">ссылку на файл на сервере FTP с
                         авторизацией</a></li>
                 </ul>
             </div>
+        </div>
 
+        <!-- Форма -->
+        <div class="col-12 order-2 order-lg-3 highlighted">
+            <div class="form">
+                <h2 class="h4 mb-3">Форма</h2>
+                <form class="needs-validation" novalidate>
+                    <div class="mb-3">
+                        <label for="fio" class="form-label">ФИО</label>
+                        <input type="text" class="form-control" id="fio" name="fio" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Телефон</label>
+                        <input type="tel" class="form-control" id="phone" name="phone">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="date" class="form-label">Дата рождения</label>
+                        <input type="date" class="form-control" id="date" name="date">
+                    </div>
 
-            <div class="askform highlighted content">
-                <h1 id="form">Форма</h1>
-                <form action="/submit" method="post">
-                    <label>ФИО: <input type="text" name="fullname" required></label>
-                    <br><br>
-                    <label>Телефон: <input type="tel" name="phone"></label>
-                    <br><br>
-                    <label>Email: <input type="email" name="email" required></label>
-                    <br><br>
-                    <label>Дата рождения: <input type="date" name="birthdate"></label>
-                    <br><br>
+                    <div class="mb-3">
+                        <p class="mb-2">Пол:</p>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="male" name="gender" value="male" checked>
+                            <label class="form-check-label" for="male">Мужской</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="female" name="gender" value="female">
+                            <label class="form-check-label" for="female">Женский</label>
+                        </div>
+                    </div>
 
-                    <label>Пол:</label>
-                    <br>
-                    <label><input type="radio" name="gender" value="male"> Мужской</label>
-                    <br>
-                    <label><input type="radio" name="gender" value="female"> Женский</label>
-                    <br><br>
+                    <div class="mb-3">
+                        <label for="lang" class="form-label">Любимый язык программирования</label>
+                        <select class="form-select" id="lang" name="lang[]" multiple>
+                            <option value="1">Pascal</option>
+                            <option value="2">C</option>
+                            <option value="3">C++</option>
+                            <option value="4">JavaScript</option>
+                            <option value="5">PHP</option>
+                            <option value="6">Python</option>
+                            <option value="7">Java</option>
+                            <option value="8">Haskel</option>
+                            <option value="9">Clojure</option>
+                            <option value="10">Prolog</option>
+                            <option value="11">Scala</option>
+                        </select>
+                    </div>
 
-                    <label>Любимый язык программирования:</label>
-                    <br>
-                    <select name="languages[]" multiple size="6">
-                        <option value="Pascal">Pascal</option>
-                        <option value="C">C</option>
-                        <option value="C++">C++</option>
-                        <option value="JavaScript">JavaScript</option>
-                        <option value="PHP">PHP</option>
-                        <option value="Python">Python</option>
-                        <option value="Java">Java</option>
-                        <option value="Haskel">Haskel</option>
-                        <option value="Clojure">Clojure</option>
-                        <option value="Prolog">Prolog</option>
-                        <option value="Scala">Scala</option>
-                    </select>
-                    <br><br>
+                    <div class="mb-3">
+                        <label for="biography" class="form-label">Биография</label>
+                        <textarea class="form-control" id="biography" name="biography" rows="3"></textarea>
+                    </div>
 
-                    <label>Биография:<br>
-                        <textarea name="bio" rows="5" cols="40"></textarea>
-                    </label>
-                    <br><br>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="contract">
+                        <label class="form-check-label" for="contract">С контрактом ознакомлен</label>
+                    </div>
 
-                    <label><input type="checkbox" name="contract" required> С контрактом ознакомлен(а)</label>
-                    <br><br>
-
-                    <button type="submit">Сохранить</button>
+                    <button type="submit" class="btn btn-primary">Сохранить</button>
                 </form>
             </div>
-
-
-            <footer class="footer highlighted"><p> (с) Сомова Олеся </p></footer>
         </div>
-    </body>
+    </div>
+</main>
+
+<footer class="bg-primary text-black text-center py-3 mt-4 highlighted">
+    &copy; Сомова Олеся
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>попап форма</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h2><button id="buttonPopup">Заполнить форму</button></h2>
+
+        <div id="formPopup" class="popup">
+            <div class="Popup-content">
+                <form>
+                    <span class="close">&times;</span>
+                    <label>
+                        ФИО: <br/>
+                        <input name ="name"
+                               id ="name"
+                               placeholder ="Введите ваше ФИО"/>
+                    </label> <br/>
+
+                    <label>
+                        Электронная почта: <br/>
+                        <input name="email"
+                               id="email"
+                               type ="email"
+                               placeholder ="Введите вашу электронную почту"/>
+                    </label><br/>
+
+                    <label>
+                        Телефон: <br/>
+                        <input name ="tel"
+                               id ="tel"
+                               type="tel"
+                               placeholder ="Введите свой номер телефона"/>
+                    </label> <br/>
+
+                    <label>
+                        Организация: <br/>
+                        <input name ="organization"
+                               id ="organization"
+                               placeholder ="Введите свою организацию"/>
+                    </label> <br/>
+
+                    <label>
+                        Сообщение: <br/>
+                        <input name ="message"
+                               id ="message"
+                               placeholder ="Введите, что хотите сообщить"/>
+                    </label> <br/>
+
+                    <label>
+                        <input type="checkbox"
+                               name="check"
+                               id="check"/>
+                        С политикой обработки персональных данных ознакомлен(-а)
+                    </label><br/>
+
+                    <input type="submit" value="Сохранить" />
+                </form>
+            </div>
+        </div>
+
+        <script src="js/newjavascript.js"></script>
+    </body>
+</html>
